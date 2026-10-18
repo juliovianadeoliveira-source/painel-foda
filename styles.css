@@ -38,3 +38,32 @@ table{width:100%;border-collapse:collapse;min-width:680px;text-align:left}th,td{
 .user-label{min-width:0}.user-label small{overflow-wrap:anywhere;line-height:1.4}
 .module-placeholder{max-width:780px;margin-top:20px}.module-placeholder h2{font:700 18px Manrope}.module-placeholder p{color:var(--muted);line-height:1.7;max-width:620px}.placeholder-symbol{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:#2c2850;color:#b5aaff;font-size:21px;font-weight:800;margin-bottom:15px}
 @media(max-width:700px){.sidebar{height:100dvh;position:fixed;overflow:hidden}.nav{flex:1;min-height:0}.admin-identity span{font-size:10px}}
+
+
+/* Dashboard refinement */
+.welcome-banner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 26px;margin:0 0 22px;border:1px solid #34345b;border-radius:16px;background:radial-gradient(ellipse at 82% 20%,#5144a533,transparent 40%),linear-gradient(120deg,#171d35,#121a2d 68%);overflow:hidden}
+.welcome-banner .eyebrow{display:inline-block;color:#a79cff;font-size:10px;font-weight:800;letter-spacing:1.7px;margin-bottom:9px}
+.welcome-banner h2{font:800 22px Manrope,sans-serif;margin:0 0 7px;letter-spacing:-.5px}
+.welcome-banner p{margin:0;color:var(--muted);font-size:13px}
+.welcome-banner .button{white-space:nowrap}
+.stat-card{transition:transform .18s ease,border-color .18s ease}
+.stat-card:hover{transform:translateY(-2px);border-color:#41476a}
+.stat-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.metric-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;font-size:13px;font-weight:800;background:#8b7cff18;color:#a79cff}
+.metric-icon.blue{background:#63a6ff18;color:#63a6ff}
+.metric-icon.green{background:#55d6a118;color:#55d6a1}
+.metric-icon.orange{background:#ffbd7018;color:#ffbd70}
+.metric-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;background:var(--green)}
+.recent-list{display:flex;flex-direction:column}
+.recent-row{display:flex;align-items:center;gap:11px;padding:13px 0;border-bottom:1px solid var(--border);min-width:0}
+.recent-row:last-child{border-bottom:0}
+.avatar-initial{display:grid;place-items:center;flex-shrink:0;width:36px;height:36px;border-radius:11px;background:#8b7cff20;color:#b8adff;font-weight:800}
+.recent-name{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}
+.recent-name strong{font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.recent-name small{font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.status-pill{display:inline-flex;align-items:center;flex-shrink:0;padding:5px 9px;border-radius:999px;font-size:10px;font-weight:700}
+.status-active{color:#69dfae;background:#55d6a11a}
+.status-pending{color:#ffc67e;background:#ffbd701a}
+.quick-links button{transition:background .18s ease,transform .18s ease}
+.quick-links button:hover{background:#1a2540;transform:translateX(2px)}
+@media(max-width:720px){.welcome-banner{align-items:flex-start;flex-direction:column;padding:20px}.welcome-banner h2{font-size:19px}.welcome-banner .button{width:100%}.recent-row{gap:8px}.status-pill{font-size:9px;padding:4px 7px}}
