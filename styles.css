@@ -17,3 +17,24 @@ table{width:100%;border-collapse:collapse;min-width:680px;text-align:left}th,td{
 .danger-button{background:#3c202d;border:1px solid #6c3346;color:#ffb5be;border-radius:9px;padding:10px 14px;cursor:pointer}
 .recent-list{margin-top:14px}.recent-row{display:flex;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)}.recent-row>span:nth-child(2){flex:1}.recent-row strong,.recent-row small{display:block}.recent-row small{color:var(--muted);margin-top:4px}.recent-row>b{font-size:10px;color:#b5aaff}
 @media(max-width:700px){.form-grid{grid-template-columns:minmax(0,1fr)}.table-search{max-width:100%;margin-top:10px}.section-title{flex-wrap:wrap}.form-actions>*{flex:1}}
+
+/* Menu lateral completo do Super Admin */
+.sidebar{height:100vh;position:sticky;top:0;overflow:hidden;min-height:0}
+.nav{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;padding:0 2px 10px;scrollbar-width:thin;scrollbar-color:#303b56 transparent}
+.nav::-webkit-scrollbar{width:5px}.nav::-webkit-scrollbar-thumb{background:#303b56;border-radius:8px}
+.admin-identity{display:flex;flex-direction:column;gap:7px;margin:0 2px 14px;padding:13px 11px;background:#141c2e;border:1px solid var(--border);border-radius:10px;min-width:0}
+.admin-identity strong{font-size:10px;letter-spacing:1.2px;color:#b6aaff}
+.admin-identity span{font-size:11px;color:#dce4f4;overflow-wrap:anywhere}
+.admin-identity b{font-size:12px;color:#73e2b5}
+.admin-identity small{font-size:10px;color:#9eabc2}
+.sidebar-search{display:flex;align-items:center;gap:7px;margin:0 2px 10px;padding:8px 9px;border:1px solid var(--border);background:#0a1020;border-radius:8px;color:#8795ae}
+.sidebar-search>span{font-size:17px}
+.sidebar-search input{width:100%;min-width:0;background:transparent;border:0;outline:0;color:var(--text);font:11px 'DM Sans',sans-serif}
+.sidebar-search kbd{font-size:9px;color:#8e9ab0;background:#1b263b;border:1px solid #303b52;border-radius:4px;padding:3px 4px;white-space:nowrap}
+.nav-link{padding:9px 10px;font-size:12px;gap:9px}
+.nav-label{margin-top:15px}
+.nav-link[hidden],.nav-label[hidden]{display:none}
+.sidebar-bottom{flex-shrink:0;margin-top:0;padding-top:12px}
+.user-label{min-width:0}.user-label small{overflow-wrap:anywhere;line-height:1.4}
+.module-placeholder{max-width:780px;margin-top:20px}.module-placeholder h2{font:700 18px Manrope}.module-placeholder p{color:var(--muted);line-height:1.7;max-width:620px}.placeholder-symbol{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:#2c2850;color:#b5aaff;font-size:21px;font-weight:800;margin-bottom:15px}
+@media(max-width:700px){.sidebar{height:100dvh;position:fixed;overflow:hidden}.nav{flex:1;min-height:0}.admin-identity span{font-size:10px}}
