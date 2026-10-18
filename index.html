@@ -13,28 +13,115 @@
     <aside class="sidebar" id="sidebar">
       <a class="brand" href="#" aria-label="Painel Foda início"><span class="brand-mark">F</span><span><strong>PAINEL <b>FODA</b></strong><small>Central de gestão</small></span></a>
       <div class="workspace"><span class="workspace-dot"></span><span><small>ESPAÇO DE TRABALHO</small><strong>Minha operação</strong></span><span class="chevron">⌄</span></div>
+      <div class="admin-identity">
+        <strong>SUPER ADMIN</strong>
+        <span>juliovianadeoliveira@gmail.com</span>
+        <b>∞ Créditos ilimitados</b>
+        <small>● 2 Usuários Online</small>
+        <small>◉ 2FA Desativada</small>
+      </div>
+      <label class="sidebar-search"><span>⌕</span><input id="quickSearch" placeholder="Pesquisa rápida..."><kbd>Ctrl K</kbd></label>
       <nav class="nav">
-        <p class="nav-label">PRINCIPAL</p>
+        <p class="nav-label">A2PLAY</p>
         <a class="nav-link active" href="#inicio" data-page="inicio"><span>▦</span> Visão geral</a>
-        <a class="nav-link" href="#clientes" data-page="clientes"><span>♙</span> Clientes <em>0</em></a>
-        <a class="nav-link" href="#revendedores" data-page="revendedores"><span>♧</span> Revendedores</a>
-        <a class="nav-link" href="#planos" data-page="planos"><span>◈</span> Planos e serviços</a>
-        <p class="nav-label">GESTÃO</p>
-        <a class="nav-link" href="#financeiro" data-page="financeiro"><span>＄</span> Financeiro</a>
-        <a class="nav-link" href="#relatorios" data-page="relatorios"><span>▤</span> Relatórios</a>
-        <a class="nav-link" href="#automacoes" data-page="automacoes"><span>↯</span> Automações</a>
+        <a class="nav-link" href="#dashboard" data-page="dashboard"><span>▥</span> Dashboard</a>
+        <a class="nav-link" href="#feed" data-page="feed"><span>◉</span> Feed</a>
+        <a class="nav-link" href="#novo" data-page="novo"><span>＋</span> Novo <em>Novo</em></a>
+        <a class="nav-link" href="#avisos" data-page="avisos"><span>♧</span> Avisos</a>
+        <a class="nav-link" href="#comprar-creditos" data-page="comprar-creditos"><span>＄</span> Comprar Créditos</a>
+        <a class="nav-link" href="#tickets" data-page="tickets"><span>▤</span> Tickets de Suporte <em>2</em></a>
+        <a class="nav-link" href="#perfil" data-page="perfil"><span>♙</span> Perfil</a>
         <a class="nav-link" href="#integracoes" data-page="integracoes"><span>⌘</span> Integrações</a>
+        <a class="nav-link" href="#seguranca" data-page="seguranca"><span>⬡</span> Segurança da Conta</a>
+        <a class="nav-link" href="#sessoes" data-page="sessoes"><span>◷</span> Sessões Ativas <em>1</em></a>
+        <a class="nav-link" href="#sair" data-page="sair"><span>⇥</span> Sair</a>
+        <p class="nav-label">CLIENTES</p>
+        <a class="nav-link" href="#clientes" data-page="clientes"><span>♙</span> Clientes</a>
+        <a class="nav-link" href="#assistente-renovacao" data-page="assistente-renovacao"><span>↻</span> Assistente de Renovação <em>Beta</em></a>
+        <a class="nav-link" href="#conexoes" data-page="conexoes"><span>⌁</span> Conexões Ao Vivo</a>
+        <a class="nav-link" href="#estatisticas-clientes" data-page="estatisticas-clientes"><span>▥</span> Estatísticas de Clientes</a>
+        <a class="nav-link" href="#clientes-excluidos" data-page="clientes-excluidos"><span>▱</span> Excluído</a>
+        <a class="nav-link" href="#cupons" data-page="cupons"><span>％</span> Cupons de Desconto</a>
+        <a class="nav-link" href="#migracao-cliente" data-page="migracao-cliente"><span>⇄</span> Migração de Cliente</a>
+        <a class="nav-link" href="#excluir-massa" data-page="excluir-massa"><span>⊖</span> Excluir em Massa</a>
+        <a class="nav-link" href="#mover-clientes" data-page="mover-clientes"><span>⇢</span> Mover Clientes</a>
+        <a class="nav-link" href="#agendadas-botbot" data-page="agendadas-botbot"><span>◷</span> Agendadas no BotBot</a>
+        <a class="nav-link" href="#fila-botbot" data-page="fila-botbot"><span>☷</span> Fila do BotBot</a>
+        <a class="nav-link" href="#logs-botbot" data-page="logs-botbot"><span>▤</span> Logs do BotBot</a>
+        <a class="nav-link" href="#auditoria-clientes" data-page="auditoria-clientes"><span>⌕</span> Auditoria Clientes</a>
+        <p class="nav-label">REVENDAS</p>
+        <a class="nav-link" href="#revendedores" data-page="revendedores"><span>♧</span> Revendas</a>
+        <a class="nav-link" href="#solicitacoes" data-page="solicitacoes"><span>▣</span> Solicitações <em>0</em></a>
+        <a class="nav-link" href="#transacoes-creditos" data-page="transacoes-creditos"><span>＄</span> Transações de Créditos</a>
+        <a class="nav-link" href="#indicacao" data-page="indicacao"><span>↗</span> Link de Indicação</a>
+        <a class="nav-link" href="#restaurar-revenda" data-page="restaurar-revenda"><span>↶</span> Restaurar Revenda</a>
+        <a class="nav-link" href="#revendas-excluidas" data-page="revendas-excluidas"><span>▱</span> Excluído</a>
+        <a class="nav-link" href="#mover-revendas" data-page="mover-revendas"><span>⇢</span> Mover Revendas</a>
+        <a class="nav-link" href="#importar-revendas" data-page="importar-revendas"><span>⇧</span> Importar Revendas</a>
+        <a class="nav-link" href="#migracao-painel" data-page="migracao-painel"><span>⇄</span> Migração de Painel</a>
+        <a class="nav-link" href="#revendas-botbot" data-page="revendas-botbot"><span>◷</span> Agendadas no BotBot</a>
+        <a class="nav-link" href="#estatisticas-revendas" data-page="estatisticas-revendas"><span>▥</span> Estatísticas de Revendas</a>
+        <a class="nav-link" href="#logs-revendas" data-page="logs-revendas"><span>▤</span> Logs do BotBot</a>
+        <a class="nav-link" href="#historico-logins" data-page="historico-logins"><span>◷</span> Histórico de Logins</a>
+        <a class="nav-link" href="#auditoria-revendas" data-page="auditoria-revendas"><span>⌕</span> Auditoria Revendas</a>
+        <p class="nav-label">MENSALISTA</p>
+        <a class="nav-link" href="#renovar-mensalistas" data-page="renovar-mensalistas"><span>↻</span> Renovar Mensalistas</a>
+        <a class="nav-link" href="#atualizar-mensalistas" data-page="atualizar-mensalistas"><span>↻</span> Atualização de Mensalistas</a>
+        <a class="nav-link" href="#lembrete-mensalista" data-page="lembrete-mensalista"><span>♧</span> Lembrete de Mensalista</a>
+        <a class="nav-link" href="#planos-mensalista" data-page="planos-mensalista"><span>◈</span> Planos Mensalista</a>
+        <p class="nav-label">FINANCEIRO</p>
+        <a class="nav-link" href="#vendas-creditos" data-page="vendas-creditos"><span>＄</span> Vendas de Créditos</a>
+        <a class="nav-link" href="#renovacoes-clientes" data-page="renovacoes-clientes"><span>↻</span> Renovações de Clientes</a>
+        <a class="nav-link" href="#renovacoes-mensalistas" data-page="renovacoes-mensalistas"><span>↻</span> Renovações de Mensalistas</a>
+        <a class="nav-link" href="#compras-dominio" data-page="compras-dominio"><span>◎</span> Compras de Domínio</a>
+        <p class="nav-label">RELATÓRIOS</p>
+        <a class="nav-link" href="#relatorios" data-page="relatorios"><span>▤</span> Relatórios</a>
+        <a class="nav-link" href="#novos-conteudos" data-page="novos-conteudos"><span>✦</span> Novos Conteúdos</a>
+        <a class="nav-link" href="#estatisticas-servidores" data-page="estatisticas-servidores"><span>▥</span> Estatísticas dos Servidores</a>
+        <p class="nav-label">BOTBOT E UTILITÁRIOS</p>
+        <a class="nav-link" href="#botbot" data-page="botbot"><span>⌘</span> BotBot</a>
+        <a class="nav-link" href="#chatbot" data-page="chatbot"><span>◉</span> ChatBot</a>
+        <a class="nav-link" href="#dominios" data-page="dominios"><span>◎</span> Domínios</a>
+        <a class="nav-link" href="#todos-dominios" data-page="todos-dominios"><span>◎</span> Todos Domínios</a>
+        <a class="nav-link" href="#desbloquear-ip" data-page="desbloquear-ip"><span>⊕</span> Desbloquear Endereço IP</a>
         <p class="nav-label">SISTEMA</p>
-        <a class="nav-link" href="#seguranca" data-page="seguranca"><span>⬡</span> Segurança</a>
-        <a class="nav-link" href="#configuracoes" data-page="configuracoes"><span>⚙</span> Configurações</a>
+        <a class="nav-link" href="#avisos-sistema" data-page="avisos-sistema"><span>♧</span> Avisos</a>
+        <a class="nav-link" href="#bloqueio-teste" data-page="bloqueio-teste"><span>⊘</span> Bloqueio de Teste</a>
+        <a class="nav-link" href="#campanhas-bonus" data-page="campanhas-bonus"><span>％</span> Campanhas de Bônus</a>
+        <a class="nav-link" href="#servidores" data-page="servidores"><span>▣</span> Servidores</a>
+        <a class="nav-link" href="#planos" data-page="planos"><span>◈</span> Planos</a>
+        <a class="nav-link" href="#planos-preco" data-page="planos-preco"><span>◈</span> Planos (Preço)</a>
+        <a class="nav-link" href="#pacote-creditos" data-page="pacote-creditos"><span>＄</span> Pacote de Créditos</a>
+        <a class="nav-link" href="#pacote-creditos-preco" data-page="pacote-creditos-preco"><span>＄</span> Pacote de Créditos (Preço)</a>
+        <a class="nav-link" href="#permissoes" data-page="permissoes"><span>⬡</span> Permissões</a>
+        <a class="nav-link" href="#auditoria-sistema" data-page="auditoria-sistema"><span>⌕</span> Auditoria do Sistema</a>
+        <a class="nav-link" href="#logs-servidor" data-page="logs-servidor"><span>▤</span> Logs de Servidor</a>
+        <a class="nav-link" href="#subpaineis" data-page="subpaineis"><span>▣</span> Subpainéis</a>
+        <a class="nav-link" href="#template-playlist" data-page="template-playlist"><span>▤</span> Template de Playlist Padrão</a>
+        <p class="nav-label">CONFIGURAÇÕES</p>
+        <a class="nav-link" href="#geral" data-page="geral"><span>⚙</span> Geral</a>
+        <a class="nav-link" href="#assinatura-painel" data-page="assinatura-painel"><span>◈</span> Assinatura do painel <em>Novo</em></a>
+        <a class="nav-link" href="#notificacoes" data-page="notificacoes"><span>♧</span> Notificações</a>
+        <a class="nav-link" href="#config-clientes" data-page="config-clientes"><span>♙</span> Clientes</a>
+        <a class="nav-link" href="#config-revendas" data-page="config-revendas"><span>♧</span> Revendas</a>
+        <a class="nav-link" href="#config-solicitacoes" data-page="config-solicitacoes"><span>▣</span> Solicitações</a>
+        <a class="nav-link" href="#config-dominios" data-page="config-dominios"><span>◎</span> Domínios</a>
+        <a class="nav-link" href="#manutencao" data-page="manutencao"><span>⚙</span> Manutenção</a>
+        <a class="nav-link" href="#estilo" data-page="estilo"><span>◐</span> Estilo <em>Atualizado</em></a>
+        <a class="nav-link" href="#dominio" data-page="dominio"><span>◎</span> Domínio</a>
+        <a class="nav-link" href="#restaurar-backup" data-page="restaurar-backup"><span>↶</span> Restaurar Backup</a>
+        <a class="nav-link" href="#desenvolvedores" data-page="desenvolvedores"><span>⌘</span> Desenvolvedores</a>
+        <a class="nav-link" href="#copiar-servidor" data-page="copiar-servidor"><span>⇄</span> Copiar Servidor</a>
+        <a class="nav-link" href="#copiar-configuracoes" data-page="copiar-configuracoes"><span>⇄</span> Copiar Configurações</a>
+        <a class="nav-link" href="#novidades" data-page="novidades"><span>✦</span> Novidades v3.94</a>
       </nav>
-      <div class="sidebar-bottom"><div class="avatar">PF</div><div class="user-label"><strong>Administrador</strong><small>Conta principal</small></div><button class="icon-btn" title="Perfil">•••</button></div>
+      <div class="sidebar-bottom"><div class="avatar">JV</div><div class="user-label"><strong>Super Admin</strong><small>juliovianadeoliveira@gmail.com</small></div><button class="icon-btn" title="Perfil">•••</button></div>
     </aside>
     <main class="main">
       <header class="topbar">
         <button class="icon-btn mobile-menu" id="menuToggle" aria-label="Abrir menu">☰</button>
         <div class="crumb">Painel <span>/</span> <strong id="crumbCurrent">Visão geral</strong></div>
-        <div class="top-actions"><span class="status"><i></i> Ambiente de demonstração</span><button class="icon-btn" aria-label="Notificações">♧</button><div class="avatar small-avatar">PF</div></div>
+        <div class="top-actions"><span class="status"><i></i> Super Admin</span><button class="icon-btn" aria-label="Notificações">♧</button><div class="avatar small-avatar">PF</div></div>
       </header>
       <section class="content" id="pageContent">
         <div class="page-heading"><div><p class="eyebrow">DOMINGO, 18 DE OUTUBRO</p><h1>Visão geral <span>✦</span></h1><p class="muted">Bem-vindo ao seu centro de controle. Tudo em um só lugar.</p></div><button class="button primary" id="quickAction">＋ Ação rápida</button></div>
