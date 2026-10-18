@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Painel Foda — central de gestão">
+  <title>Painel Foda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Painel Foda início"><span class="brand-mark">F</span><span><strong>PAINEL <b>FODA</b></strong><small>Central de gestão</small></span></a>
+      <div class="workspace"><span class="workspace-dot"></span><span><small>ESPAÇO DE TRABALHO</small><strong>Minha operação</strong></span><span class="chevron">⌄</span></div>
+      <nav class="nav">
+        <p class="nav-label">PRINCIPAL</p>
+        <a class="nav-link active" href="#inicio" data-page="inicio"><span>▦</span> Visão geral</a>
+        <a class="nav-link" href="#clientes" data-page="clientes"><span>♙</span> Clientes <em>0</em></a>
+        <a class="nav-link" href="#revendedores" data-page="revendedores"><span>♧</span> Revendedores</a>
+        <a class="nav-link" href="#planos" data-page="planos"><span>◈</span> Planos e serviços</a>
+        <p class="nav-label">GESTÃO</p>
+        <a class="nav-link" href="#financeiro" data-page="financeiro"><span>＄</span> Financeiro</a>
+        <a class="nav-link" href="#relatorios" data-page="relatorios"><span>▤</span> Relatórios</a>
+        <a class="nav-link" href="#automacoes" data-page="automacoes"><span>↯</span> Automações</a>
+        <a class="nav-link" href="#integracoes" data-page="integracoes"><span>⌘</span> Integrações</a>
+        <p class="nav-label">SISTEMA</p>
+        <a class="nav-link" href="#seguranca" data-page="seguranca"><span>⬡</span> Segurança</a>
+        <a class="nav-link" href="#configuracoes" data-page="configuracoes"><span>⚙</span> Configurações</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="avatar">PF</div><div class="user-label"><strong>Administrador</strong><small>Conta principal</small></div><button class="icon-btn" title="Perfil">•••</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn mobile-menu" id="menuToggle" aria-label="Abrir menu">☰</button>
+        <div class="crumb">Painel <span>/</span> <strong id="crumbCurrent">Visão geral</strong></div>
+        <div class="top-actions"><span class="status"><i></i> Ambiente de demonstração</span><button class="icon-btn" aria-label="Notificações">♧</button><div class="avatar small-avatar">PF</div></div>
+      </header>
+      <section class="content" id="pageContent">
+        <div class="page-heading"><div><p class="eyebrow">DOMINGO, 18 DE OUTUBRO</p><h1>Visão geral <span>✦</span></h1><p class="muted">Bem-vindo ao seu centro de controle. Tudo em um só lugar.</p></div><button class="button primary" id="quickAction">＋ Ação rápida</button></div>
+        <div class="notice"><div class="notice-icon">✦</div><div><strong>Seu painel está pronto para começar</strong><p>Esta é a interface inicial. Os indicadores são demonstrativos e serão ligados ao banco de dados quando o Supabase estiver configurado.</p></div><button class="notice-close" aria-label="Fechar aviso">×</button></div>
+        <div class="section-title"><div><h2>Resumo da operação</h2><p>Indicadores principais <span class="demo-tag">DADOS DE EXEMPLO</span></p></div><button class="button ghost" id="refreshButton">↻ Atualizar visual</button></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-top"><span>Total de clientes</span><span class="stat-icon purple">♙</span></div><div class="stat-value">—</div><div class="stat-foot">Aguardando conexão com o banco</div></article>
+          <article class="stat-card"><div class="stat-top"><span>Revendedores</span><span class="stat-icon blue">♧</span></div><div class="stat-value">—</div><div class="stat-foot">Aguardando conexão com o banco</div></article>
+          <article class="stat-card"><div class="stat-top"><span>Receita recebida</span><span class="stat-icon green">＄</span></div><div class="stat-value">R$ —</div><div class="stat-foot">Somente pagamentos confirmados</div></article>
+          <article class="stat-card"><div class="stat-top"><span>Vencimentos próximos</span><span class="stat-icon orange">◷</span></div><div class="stat-value">—</div><div class="stat-foot">Lembretes serão configurados</div></article>
+        </div>
+        <div class="dashboard-grid">
+          <article class="panel chart-panel"><div class="panel-heading"><div><h2>Movimentação</h2><p>Resumo financeiro ao longo do período</p></div><select aria-label="Período"><option>Últimos 7 dias</option><option>Últimos 30 dias</option><option>Este ano</option></select></div><div class="chart-placeholder"><div class="chart-lines"><i></i><i></i><i></i><i></i></div><div class="chart-empty"><span>▥</span><strong>Seu gráfico aparecerá aqui</strong><p>Conecte o banco para visualizar dados reais.</p></div><div class="chart-months"><span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span><span>DOM</span></div></div></article>
+          <article class="panel"><div class="panel-heading"><div><h2>Acesso rápido</h2><p>Atalhos para tarefas frequentes</p></div></div><div class="quick-links"><button data-action="clientes"><span class="quick-icon purple">♙</span><span><strong>Gerenciar clientes</strong><small>Cadastro, busca e status</small></span><b>›</b></button><button data-action="revendedores"><span class="quick-icon blue">♧</span><span><strong>Revendedores</strong><small>Contas e permissões</small></span><b>›</b></button><button data-action="financeiro"><span class="quick-icon green">＄</span><span><strong>Área financeira</strong><small>Receitas e pagamentos</small></span><b>›</b></button><button data-action="configuracoes"><span class="quick-icon orange">⚙</span><span><strong>Configurar painel</strong><small>Preferências do sistema</small></span><b>›</b></button></div></article>
+        </div>
+        <article class="panel activity-panel"><div class="panel-heading"><div><h2>Atividade recente</h2><p>Eventos do sistema aparecerão nesta área</p></div><a href="#relatorios" data-page="relatorios" class="text-link">Ver relatórios →</a></div><div class="empty-state"><div class="empty-icon">☷</div><strong>Nenhuma atividade registrada</strong><p>Quando o sistema estiver conectado, você verá aqui os eventos recentes.</p></div></article>
+        <footer>PAINEL FODA <span>•</span> Projeto independente <span class="footer-right">Interface inicial · Dados não conectados</span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
