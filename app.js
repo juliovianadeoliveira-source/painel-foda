@@ -7,7 +7,7 @@ let db;try{db={...blank,...JSON.parse(localStorage.getItem(key)||'{}')};}catch(e
 let page=location.hash.slice(1)||'inicio', formType='', editing=null;
 const fields={
 clientes:[['Nome completo','nome','text',1],['Telefone / WhatsApp','telefone'],['E-mail','email','email'],['Plano','plano'],['Vencimento','vencimento','date'],['Status','status','select',0,['Ativo','Pendente','Vencido','Suspenso']],['Observações','observacoes','textarea']],
-revendedores:[['Nome completo','nome','text',1],['Telefone','telefone'],['E-mail','email','email'],['Comissão (%)','comissao','number'],['Status','status','select',0,['Ativo','Inativo']]],
+revendedores:[['Nome completo','nome','text',1],['Tipo de revenda','tipo','select',1,['Revenda Admin','Revenda Master','Revenda']],['Revenda responsável','responsavel','select',0,[]],['Limite de revendas','limite','number'],['Telefone','telefone'],['E-mail','email','email'],['Comissão (%)','comissao','number'],['Status','status','select',0,['Ativo','Inativo']]],
 planos:[['Nome do plano','nome','text',1],['Preço (R$)','preco','number',1],['Duração (dias)','duracao','number',1],['Descrição','descricao','textarea'],['Status','status','select',0,['Ativo','Inativo']]],
 pagamentos:[['Descrição','descricao','text',1],['Cliente','cliente'],['Valor (R$)','valor','number',1],['Vencimento','vencimento','date'],['Status','status','select',0,['Pendente','Confirmado','Cancelado']],['Forma de pagamento','metodo','select',0,['Pix','Dinheiro','Transferência','Cartão','Outro']]]
 };
