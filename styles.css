@@ -154,3 +154,23 @@ body{background:#0e0f13}.sidebar{background:#0c0d12;border-right-color:#24252c}.
 .dashboard-lower .panel{padding:11px!important}
 .dashboard-lower .panel h2{font-size:9px}
 @media(max-width:760px){.sidebar{width:160px;position:fixed;left:-180px;top:0;bottom:0;z-index:30}.sidebar.open{left:0}.main{width:100%}.reference-layout{grid-template-columns:minmax(0,1fr)}.quick-test-panel{order:2}.reference-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-card:nth-child(2){border-right:0}.reference-card:nth-child(-n+2){border-bottom:1px solid #25262e}.dashboard-toolbar{flex-wrap:wrap}.period-tabs{max-width:100%;overflow-x:auto}}
+
+/* Ajuste visual principal: proporções compactas da referência A2PLAY no desktop */
+@media (min-width: 761px) {
+  .sidebar { width: 160px; padding: 16px 7px 10px; }
+  .brand { gap: 7px; padding: 0 4px 18px; }
+  .brand-mark { width: 28px; height: 28px; border-radius: 8px; font-size: 17px; }
+  .brand strong { font-size: 10px; letter-spacing: .2px; }
+  .brand small { font-size: 8px; }
+  .workspace { gap: 6px; padding: 8px 6px; margin-bottom: 12px; }
+  .workspace strong { font-size: 9px; }
+  .workspace small { font-size: 7px; letter-spacing: .3px; }
+  .admin-identity { padding: 8px 6px; margin-bottom: 8px; }
+  .admin-identity span { overflow-wrap: anywhere; }
+  .sidebar-bottom { gap: 5px; padding: 10px 2px 2px; }
+  .avatar { width: 26px; height: 26px; border-radius: 7px; }
+  .user-label strong { font-size: 9px; }
+  .user-label small { font-size: 8px; }
+  .topbar { padding: 0 12px; }
+  .content { padding-left: 9px; padding-right: 9px; }
+}
