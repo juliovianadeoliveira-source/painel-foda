@@ -5,7 +5,7 @@ const names={inicio:'Visão geral',clientes:'Clientes',revendedores:'Revendedore
 document.querySelectorAll('.nav-link[data-page]').forEach(a=>{const label=a.textContent.replace(/\s+/g,' ').trim().replace(/\s+(Novo|Beta|Atualizado|\d+)$/,'');names[a.dataset.page]=label;});
 const key='painel-foda-dados-v1',blank={clientes:[],revendedores:[],planos:[],pagamentos:[],config:{nome:'Painel FODA',lembrete:3}};
 let db;try{db={...blank,...JSON.parse(localStorage.getItem(key)||'{}')};}catch(e){db=JSON.parse(JSON.stringify(blank));}
-let page=location.hash.slice(1)||'inicio', formType='', editing=null;
+let page=location.hash.slice(1)||'dashboard', formType='', editing=null;
 const fields={
 clientes:[['Nome completo','nome','text',1],['Telefone / WhatsApp','telefone'],['E-mail','email','email'],['Plano','plano'],['Vencimento','vencimento','date'],['Status','status','select',0,['Ativo','Pendente','Vencido','Suspenso']],['Observações','observacoes','textarea']],
 revendedores:[['Nome completo','nome','text',1],['Tipo de revenda','tipo','select',1,['Revenda Admin','Revenda Master','Revenda']],['Revenda responsável','responsavel','select',0,[]],['Limite de revendas','limite','number'],['Telefone','telefone'],['E-mail','email','email'],['Comissão (%)','comissao','number'],['Status','status','select',0,['Ativo','Inativo']]],
