@@ -174,3 +174,118 @@ body{background:#0e0f13}.sidebar{background:#0c0d12;border-right-color:#24252c}.
   .topbar { padding: 0 12px; }
   .content { padding-left: 9px; padding-right: 9px; }
 }
+
+
+/* Acessibilidade: ampliar tipografia e áreas de interação em todo o painel */
+html { font-size: 16px; }
+body { font-size: 16px; }
+.sidebar { width: 250px; padding: 22px 14px 14px; }
+.brand { gap: 10px; padding: 0 7px 24px; }
+.brand-mark { width: 40px; height: 40px; font-size: 23px; }
+.brand strong { font-size: 14px; letter-spacing: .4px; }
+.brand small { font-size: 11px; }
+.workspace { display: flex; gap: 10px; padding: 12px; margin-bottom: 18px; }
+.workspace strong { font-size: 13px; }
+.workspace small { font-size: 10px; letter-spacing: .5px; }
+.admin-identity { padding: 10px 7px 14px; margin-bottom: 8px; gap: 5px; }
+.admin-identity strong { font-size: 12px; }
+.admin-identity span, .admin-identity b, .admin-identity small { font-size: 11px; }
+.sidebar-search { height: 38px; padding: 0 10px; margin-bottom: 12px; }
+.sidebar-search input { font-size: 12px; }
+.sidebar-search kbd { font-size: 10px; }
+.nav { gap: 4px; }
+.nav-label { font-size: 10px; letter-spacing: 1px; margin: 14px 8px 7px; }
+.nav-link { gap: 10px; padding: 10px 10px; min-height: 40px; border-radius: 7px; font-size: 13px; }
+.nav-link>span { width: 18px; font-size: 17px; }
+.nav-link em { font-size: 10px; padding: 3px 6px; }
+.sidebar-bottom { gap: 9px; padding: 15px 4px 4px; }
+.avatar { width: 34px; height: 34px; font-size: 12px; }
+.user-label strong { font-size: 12px; }
+.user-label small { font-size: 10px; }
+.topbar { height: 72px; padding: 0 26px; }
+.crumb { font-size: 14px; }
+.top-actions { gap: 12px; }
+.status { font-size: 12px; padding: 8px 12px; }
+.content { max-width: 1700px; padding: 28px 28px 24px; }
+.page-heading h1 { font-size: 32px; }
+.page-heading h1 span { font-size: 23px; }
+.muted { font-size: 14px; }
+.button { font-size: 14px; padding: 11px 16px; }
+.notice strong { font-size: 14px; }
+.notice p { font-size: 13px; }
+.section-title h2, .panel-heading h2 { font-size: 17px; }
+.section-title p, .panel-heading p { font-size: 13px; }
+.stat-top { font-size: 14px; }
+.stat-value { font-size: 31px; }
+.stat-foot { font-size: 12px; }
+.panel { padding: 22px; }
+.panel-heading select { font-size: 13px; }
+.table-search, input, select, textarea { font-size: 14px; }
+th, td { font-size: 13px; }
+.text-action, .text-link { font-size: 13px; }
+footer { font-size: 11px; }
+
+/* Dashboard de referência: tamanho legível nos cartões e no painel lateral */
+.reference-page-heading { min-height: 58px; margin-bottom: 12px; }
+.reference-page-heading h1 { font-size: 25px; }
+.reference-page-heading .eyebrow { font-size: 11px; }
+.reference-page-heading .muted { font-size: 13px; }
+.reference-notice { min-height: 44px; padding: 11px 14px; margin-bottom: 20px; font-size: 12px; gap: 10px; }
+.beta-tag { font-size: 10px; padding: 4px 7px; }
+.reference-notice button { font-size: 12px; }
+.dashboard-toolbar { margin-bottom: 16px; }
+.period-tabs, .scope-tabs { padding: 4px; }
+.period-tabs button, .scope-tabs button { font-size: 12px; padding: 8px 11px; }
+.reference-layout { grid-template-columns: minmax(0,1fr) 270px; gap: 16px; }
+.reference-main { gap: 16px; }
+.reference-kpis { border-radius: 9px; }
+.reference-card { padding: 17px 16px; min-height: 116px; }
+.reference-label { font-size: 12px; margin-bottom: 9px; }
+.reference-card strong { font-size: 25px; margin-bottom: 6px; }
+.reference-card small { font-size: 11px; }
+.secondary-kpis .reference-card { min-height: 96px; }
+.secondary-kpis .reference-card strong { font-size: 22px; }
+.ai-analysis { padding: 18px !important; }
+.ai-analysis .panel-heading h2 { font-size: 15px; }
+.ai-analysis .panel-heading p { font-size: 12px; }
+.quick-test-panel { padding: 17px; border-radius: 9px; }
+.quick-test-panel .panel-heading h2 { font-size: 15px; }
+.quick-test-panel .table-search { height: 38px; padding: 8px 10px; font-size: 12px; }
+.test-group { margin-bottom: 15px; }
+.test-group>strong { font-size: 11px; }
+.test-group button { font-size: 12px; padding: 10px 2px; gap: 9px; }
+.test-group button span { font-size: 12px; }
+.quick-empty { font-size: 12px; }
+.full-button { font-size: 12px; padding: 11px; }
+.quick-panel-foot { font-size: 10px; margin-top: 12px; }
+.dashboard-lower { gap: 16px; }
+.dashboard-lower .panel { padding: 18px !important; }
+.dashboard-lower .panel h2 { font-size: 15px; }
+
+/* Em telas pequenas, manter a navegação adaptável sem encolher o texto */
+@media (max-width: 760px) {
+  .sidebar { width: 270px; left: -290px; padding: 20px 14px; }
+  .sidebar.open { left: 0; }
+  .brand strong { font-size: 14px; }
+  .brand small { font-size: 11px; }
+  .nav-label { font-size: 11px; }
+  .nav-link { font-size: 14px; min-height: 42px; padding: 11px 10px; }
+  .nav-link>span { font-size: 18px; width: 20px; }
+  .topbar { height: 62px; padding: 0 12px; }
+  .content { padding: 10px 12px 22px; }
+  .reference-page-heading { height: auto; min-height: 48px; margin: 0 0 12px; padding: 4px 0; }
+  .reference-page-heading h1 { font-size: 22px; }
+  .reference-page-heading .eyebrow, .reference-page-heading .muted { display: block; }
+  .reference-notice { margin-bottom: 16px; font-size: 12px; padding: 10px; }
+  .reference-layout { grid-template-columns: minmax(0,1fr); gap: 14px; }
+  .reference-card { padding: 14px 12px; min-height: 100px; }
+  .reference-label { font-size: 11px; }
+  .reference-card strong { font-size: 23px; }
+  .reference-card small { font-size: 10px; }
+  .quick-test-panel .panel-heading h2, .ai-analysis .panel-heading h2 { font-size: 15px; }
+  .test-group>strong { font-size: 11px; }
+  .test-group button { font-size: 12px; padding: 10px 2px; }
+  .dashboard-lower .panel h2 { font-size: 15px; }
+  .section-title { flex-wrap: wrap; }
+  .stats-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
