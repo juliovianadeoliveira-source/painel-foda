@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b1020">
   <meta name="description" content="Painel Foda — central de gestão">
   <title>Painel Foda</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261018-2">
 </head>
 <body>
   <div class="app-shell">
@@ -23,8 +23,8 @@
       <label class="sidebar-search"><span>⌕</span><input id="quickSearch" placeholder="Pesquisa rápida..."><kbd>Ctrl K</kbd></label>
       <nav class="nav">
         <p class="nav-label">A2PLAY</p>
-        <a class="nav-link active" href="#inicio" data-page="inicio"><span>▦</span> Visão geral</a>
-        <a class="nav-link" href="#dashboard" data-page="dashboard"><span>▥</span> Dashboard</a>
+        <a class="nav-link" href="#inicio" data-page="inicio"><span>▦</span> Visão geral</a>
+        <a class="nav-link active" href="#dashboard" data-page="dashboard"><span>▥</span> Dashboard</a>
         <a class="nav-link" href="#feed" data-page="feed"><span>◉</span> Feed</a>
         <a class="nav-link" href="#novo" data-page="novo"><span>＋</span> Novo <em>Novo</em></a>
         <a class="nav-link" href="#avisos" data-page="avisos"><span>♧</span> Avisos</a>
@@ -120,11 +120,11 @@
     <main class="main">
       <header class="topbar">
         <button class="icon-btn mobile-menu" id="menuToggle" aria-label="Abrir menu">☰</button>
-        <div class="crumb">Painel <span>/</span> <strong id="crumbCurrent">Visão geral</strong></div>
+        <div class="crumb">Painel <span>/</span> <strong id="crumbCurrent">Dashboard</strong></div>
         <div class="top-actions"><span class="status"><i></i> Super Admin</span><button class="icon-btn" aria-label="Notificações">♧</button><div class="avatar small-avatar">PF</div></div>
       </header>
       <section class="content" id="pageContent">
-        <div class="page-heading"><div><p class="eyebrow">DOMINGO, 18 DE OUTUBRO</p><h1>Visão geral <span>✦</span></h1><p class="muted">Bem-vindo ao seu centro de controle. Tudo em um só lugar.</p></div><button class="button primary" id="quickAction">＋ Ação rápida</button></div>
+        <div class="page-heading reference-page-heading"><div><h1>Dashboard</h1></div></div>
         <div class="notice"><div class="notice-icon">✦</div><div><strong>Seu painel está pronto para começar</strong><p>Esta é a interface inicial. Os indicadores são demonstrativos e serão ligados ao banco de dados quando o Supabase estiver configurado.</p></div><button class="notice-close" aria-label="Fechar aviso">×</button></div>
         <div class="section-title"><div><h2>Resumo da operação</h2><p>Indicadores principais <span class="demo-tag">DADOS DE EXEMPLO</span></p></div><button class="button ghost" id="refreshButton">↻ Atualizar visual</button></div>
         <div class="stats-grid">
@@ -143,6 +143,6 @@
     </main>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=20261018-2"></script>
 </body>
 </html>
