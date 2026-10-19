@@ -103,3 +103,54 @@ table{width:100%;border-collapse:collapse;min-width:680px;text-align:left}th,td{
 .full-button{width:100%;justify-content:center;font-size:10px;padding:10px}.quick-panel-foot{display:block;color:#737b8b;font-size:8px;text-align:center;margin-top:10px}
 body{background:#0e0f13}.sidebar{background:#0c0d12;border-right-color:#24252c}.panel,.stat-card{background:#111217;border-color:#25262e}
 @media(max-width:760px){.reference-layout{grid-template-columns:1fr}.dashboard-toolbar{align-items:flex-start;flex-direction:column}.period-tabs{max-width:100%;overflow-x:auto}.reference-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-card:nth-child(2){border-right:0}.reference-card:nth-child(-n+2){border-bottom:1px solid #25262e}.dashboard-lower{grid-template-columns:1fr}.reference-notice{flex-wrap:wrap}}
+
+/* Pixel-level compact sizing based on user's screenshot */
+.sidebar{width:160px;padding:12px 9px 10px;overflow-y:auto;gap:0}
+.brand{padding:0 5px 14px;gap:7px}.brand-mark{width:30px;height:30px;border-radius:9px;font-size:18px}
+.brand strong{font-size:10px;letter-spacing:.3px}.brand small{font-size:8px}
+.workspace{display:none}
+.admin-identity{display:flex;flex-direction:column;gap:3px;padding:0 4px 13px;margin:0;border:0}
+.admin-identity strong{font-size:9px;color:#dce2ef}
+.admin-identity span{font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.admin-identity b{font-size:8px;color:#d1d5df;font-weight:500}
+.admin-identity small{font-size:8px;color:#a2adbf}
+.sidebar-search{height:29px;margin:0 0 10px;padding:0 7px;gap:4px;border-radius:5px}
+.sidebar-search input{font-size:8px;min-width:0}.sidebar-search kbd{display:none}
+.nav{gap:1px}.nav-label{font-size:8px;letter-spacing:.8px;margin:10px 4px 4px}
+.nav-link{gap:7px;padding:6px 7px;border-radius:4px;font-size:9px;min-height:24px}
+.nav-link>span{width:12px;font-size:11px}.nav-link em{font-size:7px;padding:2px 4px}
+.main{background:#0e0f13}.topbar{height:65px;padding:0 17px;background:#0e0f13;border-bottom:0}
+.crumb{font-size:11px}.top-actions{gap:8px}.content{max-width:none;margin:0;padding:0 9px 20px}
+.reference-page-heading{height:40px;margin:0 0 3px;padding:0 0 0 2px;align-items:center}
+.reference-page-heading .eyebrow,.reference-page-heading .muted{display:none}
+.reference-page-heading h1{font:600 11px 'DM Sans',sans-serif;letter-spacing:0}
+.reference-notice{min-height:30px;padding:6px 8px;margin-bottom:35px;font-size:8px;border-radius:4px;gap:6px}
+.beta-tag{font-size:7px;padding:2px 5px}
+.reference-notice button{font-size:8px}
+.dashboard-toolbar{margin-bottom:12px;align-items:center}
+.period-tabs,.scope-tabs{padding:2px;border-radius:5px}
+.period-tabs button,.scope-tabs button{font-size:8px;padding:6px 7px}
+.reference-layout{grid-template-columns:minmax(0,1fr) 190px;gap:11px}
+.reference-main{gap:11px}
+.reference-kpis{border-radius:5px}
+.reference-card{padding:10px 9px;min-height:92px}
+.reference-label{font-size:8px;margin-bottom:7px}
+.reference-card strong{font-size:17px;margin-bottom:4px}
+.reference-card small{font-size:7px}
+.secondary-kpis .reference-card{min-height:77px}
+.secondary-kpis .reference-card strong{font-size:16px}
+.ai-analysis{padding:11px!important}
+.ai-analysis .panel-heading h2{font-size:9px}
+.ai-analysis .panel-heading p{font-size:8px}
+.quick-test-panel{padding:10px;border-radius:5px}
+.quick-test-panel .panel-heading h2{font-size:9px}
+.quick-test-panel .table-search{height:28px;padding:6px 8px;font-size:9px}
+.test-group{margin-bottom:12px}
+.test-group>strong{font-size:7px}
+.test-group button{font-size:8px;padding:8px 1px}
+.full-button{font-size:8px;padding:8px}
+.quick-panel-foot{font-size:7px}
+.dashboard-lower{gap:11px}
+.dashboard-lower .panel{padding:11px!important}
+.dashboard-lower .panel h2{font-size:9px}
+@media(max-width:760px){.sidebar{width:160px;position:fixed;left:-180px;top:0;bottom:0;z-index:30}.sidebar.open{left:0}.main{width:100%}.reference-layout{grid-template-columns:minmax(0,1fr)}.quick-test-panel{order:2}.reference-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-card:nth-child(2){border-right:0}.reference-card:nth-child(-n+2){border-bottom:1px solid #25262e}.dashboard-toolbar{flex-wrap:wrap}.period-tabs{max-width:100%;overflow-x:auto}}
